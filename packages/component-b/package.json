@@ -1,14 +1,20 @@
 {
-  "name": "component-b",
+  "name": "@ruphin/test-vue-component-b",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite --config vite.dev.config.js"
   },
   "author": "Goffert van Gool <ruphin@ruphin.net>",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "vite": "^5.3.3"
+    "@vitejs/plugin-vue": "^5.0.5",
+    "vite": "^5.3.3",
+    "vite-plugin-mock-server": "^1.2.0"
+  },
+  "dependencies": {
+    "@ruphin/test-vue-component-a": "^0.0.0"
   }
 }
